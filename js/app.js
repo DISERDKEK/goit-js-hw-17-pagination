@@ -1,4 +1,4 @@
-import { fetchImages, PER_PAGE } from './js/pixabay-api.js';
+import { fetchImages, PER_PAGE } from './pixabay-api.js';
 
 const gallery = document.getElementById('gallery');
 const loadMoreBtn = document.getElementById('load-more-btn');
