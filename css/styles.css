@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: white;
+    color: black;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 24px 16px;
+}
+
+h1 {
+    margin-top: 0;
+    text-align: center;
+}
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 24px;
+    padding: 12px 16px;
+    background-color: lightgray;
+    border-radius: 8px;
+}
+
+select,
+button {
+    padding: 8px 14px;
+    font-size: 14px;
+    border: 1px solid gray;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.page-info {
+    margin-left: auto;
+    font-size: 14px;
+    color: gray;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 16px;
+    list-style: none;
+    padding: 0;
+    margin: 0 0 24px;
+}
+
+.gallery-item {
+    background-color: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.gallery-item img {
+    display: block;
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.gallery-info {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 12px;
+    font-size: 13px;
+    color: gray;
+}
+
+.message {
+    text-align: center;
+    font-weight: bold;
+    color: rgb(66, 66, 66);
+}
+
+.load-more-btn {
+    display: block;
+    margin: 20px auto 0;
+    padding: 12px 28px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background-color: green;
+    border: none;
+}
+
+.load-more-btn:hover {
+    background-color: darkgreen;
+}
+
+.load-more-btn:disabled {
+    background-color: lightgray;
+    cursor: not-allowed;
+}
+
+.is-hidden {
+    display: none;
+}
